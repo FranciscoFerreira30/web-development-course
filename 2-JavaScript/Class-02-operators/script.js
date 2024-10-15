@@ -35,8 +35,6 @@ const card = true;
 const credit = true;
 const cash = true;
 
-
-
 // disney
 console.log(card && credit); //True True 
 console.log(card || credit); //False False
