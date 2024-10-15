@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tabela de preços" />
+    <title>Class04-tables</title>
+    <style>
+      table {
+        border-collapse:collapse;
+        text-align: center;
+      }
+      th, td {
+        border: 1px solid black;
+      }
+      th {
+        background:lightslategray;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Compras
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Preço (R$)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>arroz</td>
+          <td>10,00</td>
+        </tr>
+        <tr>
+          <td>feijão</td>
+          <td>28,00</td>
+        </tr>
+        <tr>
+          <td>carne</td>
+          <td>58,00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total</th>
+          <td>88,00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

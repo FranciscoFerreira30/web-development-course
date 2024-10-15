@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="formulario de cadastro" />
+    <meta name="description" content="Formúlario de inscrição de cursos" />
+    <title>Cass 09 HTML Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form method="get">
+      <fieldset>
+        <legend>formúlario de inscriçao</legend>
+        <section>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autofocus
+            required
+            placeholder="Digite seu nome"
+          />
+        </section>
+        <section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@email.com"
+          />
+        </section>
+        <div class="boxBirthPhone">
+          <section>
+            <label for="birth">Nascimento:</label>
+            <input type="date" id="birth" name="birth" />
+          </section>
+          <section>
+            <label for="phone">Whatsapp:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="(xx)xxxxxx-xxxx"
+            />
+          </section>
+        </div>
+        <section>
+          <label for="course">Cursos</label>
+          <select name="course" id="courses">
+            <option value="Informática">Informática</option>
+            <option value="Mecânica">Mecânica</option>
+            <option value="Comandos">Comandos</option>
+            <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+          </select>
+        </section>
+
+        <section class="boxShift">
+          <fieldset>
+            <span>
+              <legend>Turno:</legend>
+            </span>
+            <span>
+              <label for="shift">Manhã</label>
+              <input type="radio" id="morning" name="shift" value="morning" />
+            </span>
+            <span>
+              <label for="shift">Tarde</label>
+              <input type="radio" id="shift" name="shift" value="afternoon" />
+            </span>
+          </fieldset>
+        </section>
+        <label for="obs">Observações</label>
+        <section>
+          <textarea
+            name="obs"
+            id="obs"
+            placeholder="Digite uma pergunta ou uma sugestão"
+          ></textarea>
+        </section>
+
+        <section>
+          <input
+            type="checkbox"
+            id="term"
+            name="term"
+            value="term"
+            required
+            title="Por favor aceite os termos de uso"
+            oninvalid="this.setCustomValidity('Por favor leia  e aceite os termos de uso!')"
+            oninput="this.setCoustomValidity('')"
+          />
+          <label for="term">Aceita os <a href="#">Termos de uso?</a></label>
+        </section>
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
