@@ -44,6 +44,3 @@ console.log(Math.trunc(num2));
  const randomNumber = Math.floor(Math.random() * times. length);
  console.log(times[randomNumber]);
  
-
-//num9 = nome;
-//console.log(input("digite seu num9", "seja bem vindo ao script"));
