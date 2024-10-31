@@ -129,3 +129,21 @@ console.log((dataNow - birthday) / 1000 / 60 / 60 / 24 / 365.25);
 console.log(dataNow.getFullYear());
 console.log(dataNow.getFullYear());
 console.log(dataNow.getFullYear() - birthday.getFullYear());
+
+const oldday = new Date();
+const newday = new Date("2025-01-01 00:00:00");
+console.log(oldday);
+console.log((newday - oldday) / 1000 / 60 / 60 / 24);
+console.log(newday.getFullYear());
+console.log(newday.getFullYear());
+console.log(newday.getFullYear() - oldday.getFullYear());
+
+
+function palindromo(text){
+  const original = text.replaceAll(" ", "").toLocaleLowerCase(); 
+ 
+   const reverse  = original.split("").reverse().join("");
+
+   return original == reverse;
+}
+console.log(palindromo("A cara rajada da jararaca"));
