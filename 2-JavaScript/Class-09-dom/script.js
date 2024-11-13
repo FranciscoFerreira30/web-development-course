@@ -43,3 +43,10 @@ function basic() {
 title.addEventListener("mouseenter", () => {
   console.log("Title");
 });
+
+const myInput = document.querySelector("input");
+console.log(myInput);
+
+myInput.addEventListener("keyup", () => {
+  console.log(myInput.value);
+});
